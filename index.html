@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Codificador e decodificador de texto. Este site foi um challenge do programa ONE 
+        (Oracle Next Education) desenvolvido para aprimorar os conhecimentos em lógica de programação, HTML, CSS e JavaScript.">
+        
+        <title>Codificador de texto</title>
+
+        <link rel="stylesheet" href="reset.css"> 
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        </style>
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo">
+                <img src="Imagens/logo_alura.svg" alt="Logo da Alura"> 
+            </div>
+
+            <div>
+                <button id="btnLimpar" onclick="recarregar()">Limpar tela</button>
+            </div>
+        </header>
+        
+        <main>
+            <section class="texto-entrada">
+                
+                <textarea id="texto-entrada" name="input-texto" style="color: #0A3871; background: none;" rows="9" cols="35" placeholder="Digite seu texto"></textarea>
+                 
+                <div>
+                    <h6 class="informacao">&#128712 Apenas letras minúsculas e sem acento</h6> 
+                </div>
+
+                <div class="botoes">
+                    <button class="btnEncriptar" onclick="btnEncriptar()">Criptografar</button>
+                    <button class="btnDescriptar" onclick="btnDesencriptar()">Descriptografar</button>
+                </div>
+            </section>
+    
+            <section class="resultado">
+
+                <div class="texto-resultado">
+                    <textarea id="resultado-texto" name="mensagem" rows="7" cols="15"></textarea>
+                </div>
+
+                <div class="imagem">
+                    <img src="Imagens/vetor.svg" alt="Vetor texto não encontrado">
+                </div>
+               
+                
+                <p class="text-mensagem">Nenhuma mensagem encontrada</p>
+                
+                <p class="orientacao">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                
+                <div class="copiar">
+                    <button class="btnCopiar" onclick="copiar()">Copiar</button> 
+                </div>
+                
+            </section>
+        </main>
+
+        <footer>
+            <h6>Desenvolvido por Naicon de Souza Martins para o Challenge do programa ONE 
+                (Oracle Next Education) em parceria com Alura</h6>
+        </footer>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
